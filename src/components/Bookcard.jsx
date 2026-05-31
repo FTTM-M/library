@@ -16,6 +16,7 @@ function Bookcard({ data: { author, image, language, pages, title } }) {
           </span>
         </div>
       </div>
+      <button>like</button>
     </div>
   );
 }
