@@ -1,8 +1,29 @@
+.header {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  margin: 50px 0px;
+  background-color: rgb(50, 49, 49);
+  padding: 10px 20px;
+  align-items: center
+}
 .header{
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    margin:50px 0px;
-    background-color:  rgb(50, 49, 49);
-    padding: 10px 15px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.footer{
+margin: 50px 0px 30px;
+background-color: rgb(50, 49, 49);
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+
+}
+.footer a{
+  text-decoration:none;
+}
+.footer a:visited{
+  color: #551A8B;
 }

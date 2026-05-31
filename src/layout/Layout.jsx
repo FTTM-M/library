@@ -5,7 +5,7 @@ function Layout({ children }) {
     <>
       <header className={styles.header}>
         <h1>Book App</h1>
-        <p>Book is all ypu find ...</p>
+        <p>Book is all you find ...</p>
       </header>
       {children}
       <footer className={styles.footer}>
