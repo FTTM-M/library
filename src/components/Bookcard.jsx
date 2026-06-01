@@ -1,4 +1,14 @@
+import { useState } from "react";
+
+import { IoIosHeart } from "react-icons/io";
+
 function Bookcard({ data: { author, image, language, pages, title } }) {
+  const [like, setLike] = useState(false);
+
+  const Buttonhandler = () => {
+    setLike((like) => !like);
+  };
+
   return (
     <div>
       <img src={image} title={title} />
@@ -16,7 +26,9 @@ function Bookcard({ data: { author, image, language, pages, title } }) {
           </span>
         </div>
       </div>
-      <button>like</button>
+      <button onClick={Buttonhandler}>
+        <IoIosHeart color={like ? "#EE3324" : "white"} fontSize="2.2rem" />
+      </button>
     </div>
   );
 }
