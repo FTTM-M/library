@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { IoIosHeart } from "react-icons/io";
 
-import styles from "./Bookcard.module.css"
+import styles from "./Bookcard.module.css";
 
 function Bookcard({ data: { author, image, language, pages, title } }) {
   const [like, setLike] = useState(false);
@@ -11,7 +11,7 @@ function Bookcard({ data: { author, image, language, pages, title } }) {
   };
 
   return (
-    <div  className={styles.card}>
+    <div className={styles.card}>
       <img src={image} title={title} />
 
       <div className={styles.info}>
@@ -21,13 +21,10 @@ function Bookcard({ data: { author, image, language, pages, title } }) {
         <div>
           <span>{language}</span>
 
-          <span>
-            {pages}
-            pages
-          </span>
+          <span>{pages} pages</span>
         </div>
       </div>
-      <button onClick={Buttonhandler} className={styles.button}>
+      <button onClick={Buttonhandler}>
         <IoIosHeart color={like ? "#EE3324" : "white"} fontSize="2.2rem" />
       </button>
     </div>

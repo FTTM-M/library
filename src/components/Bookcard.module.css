@@ -1,0 +1,37 @@
+.card{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background-color: rgb(50, 49, 49);
+    border-radius: 15px;
+    padding: 10px;
+    
+}
+.card img{
+    width: 60px;
+    border-radius: 5px;
+    
+}
+.info{
+    width: 100%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+}
+.info span{
+    color: rgb(107, 104, 100);
+    margin-right: 20px;
+    font-size: 0.85rem;
+}
+button{
+    background: none;
+    border: none;
+    height: fit-content;
+    cursor: pointer;
+    transition: 2ms ease-in-out;
+}
+button:hover{
+    transform: scale(1.2);
+}
