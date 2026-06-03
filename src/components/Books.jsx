@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import { books } from "../constants/mockData";
 import Bookcard from "./Bookcard";
+import Favorites from "./Favorites";
 
 function Books() {
   const [liked, setLiked] = useState([]);
@@ -18,10 +19,16 @@ function Books() {
 
   return (
     <div>
-      {books.map((book) => (
-        <Bookcard key={book.id} data={book} HandleLike={HandleLike} />
-      ))}
-      {!!liked.length && <div>liked</div>}
+      {" "}
+      <div>
+        {books.map((book) => (
+          <Bookcard key={book.id} data={book} HandleLike={HandleLike} />
+        ))}
+        
+      </div>
+      {!!liked.length && <div>{liked.map((book)=>(<Favorites  key={book.id} data={book}/>
+
+      ))}</div>}
     </div>
   );
 }
