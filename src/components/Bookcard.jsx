@@ -3,10 +3,12 @@ import { IoIosHeart } from "react-icons/io";
 
 import styles from "./Bookcard.module.css";
 
-function Bookcard({ data: { author, image, language, pages, title } }) {
+function Bookcard({ data, HandleLike }) {
+  const { author, image, language, pages, title } = data;
   const [like, setLike] = useState(false);
 
   const Buttonhandler = () => {
+    HandleLike(data, like);
     setLike((like) => !like);
   };
 
