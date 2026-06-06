@@ -1,0 +1,16 @@
+.favorites {
+  color: black;
+}
+.list {
+  display: flex;
+  background-color: rgb(133, 131, 131);
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+.favorites img {
+  width: 30px;
+  margin-right: 5px;
+  border-radius: 3px;
+}

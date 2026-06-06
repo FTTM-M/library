@@ -3,7 +3,7 @@ import { useState } from "react";
 import { books } from "../constants/mockData";
 import Bookcard from "./Bookcard";
 import Favorites from "./Favorites";
-
+import styles from "./Books.module.css";
 function Books() {
   const [liked, setLiked] = useState([]);
 
@@ -18,17 +18,20 @@ function Books() {
   };
 
   return (
-    <div>
-      {" "}
-      <div>
+    <div className={styles.container}>
+      <div className={styles.card}>
         {books.map((book) => (
           <Bookcard key={book.id} data={book} HandleLike={HandleLike} />
         ))}
-        
       </div>
-      {!!liked.length && <div>{liked.map((book)=>(<Favorites  key={book.id} data={book}/>
-
-      ))}</div>}
+      {!!liked.length && (
+        <div className={styles.favorites}>
+          <h4>Favorites</h4>
+          {liked.map((book) => (
+            <Favorites key={book.id} data={book} />
+          ))}
+        </div>
+      )}
     </div>
   );
 }

@@ -1,8 +1,9 @@
+import styles from "./Favorites.module.css";
+
 function Favorites({ data: { image, title } }) {
   return (
-    <div>
-      <h4>Favorites</h4>
-      <div>
+    <div className={styles.favorites}>
+      <div className={styles.list} >
         <img src={image} alt={title} />
         <p>{title}</p>
       </div>

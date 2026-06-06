@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+}
+.card {
+  flex: 2.6 1 0;
+}
+.favorites {
+  flex: 1 1 0;
+  margin-left: 15px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: rgb(50, 49, 49);
+  height: fit-content;
+}
+.container h4 {
+  padding: 10px;
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+}
