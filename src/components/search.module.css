@@ -1,5 +1,5 @@
 .search{
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 
 }
 .search input{
@@ -10,6 +10,7 @@
     margin-left: 15px;
     font-size: 1.2rem;
     background-color:#858383;
+    padding-left: 10px;
 }
 .search input:focus{
     outline: none;
